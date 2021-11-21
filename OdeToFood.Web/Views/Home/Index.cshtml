@@ -1,0 +1,20 @@
+﻿@model IEnumerable<OdsToFood.Data.Models.Restaurant>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<div class="jumbotron">
+
+</div>
+<div>
+    <table class="table table-bordered">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Cuisine</td>
+            </tr>
+        }
+    </table>
+</div>
