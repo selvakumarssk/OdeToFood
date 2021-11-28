@@ -5,16 +5,5 @@
 }
 <br />
 <div class="jumbotron">
-
-</div>
-<div>
-    <table class="table table-bordered">
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Name</td>
-                <td>@item.Cuisine</td>
-            </tr>
-        }
-    </table>
+There are @Model.Count() Restaurants in DB.
 </div>
